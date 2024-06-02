@@ -26,7 +26,7 @@ export default function NavBar(){
   ];
 
   return (
-    <div className='bg-black flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
+    <div className='bg-black flex justify-between items-center h-16 max-w-[1240px] mx-auto px-4 text-white bg-neutral-800 rounded'>
       {/* Logo */}
       <Image
         src={Logo}
@@ -41,7 +41,7 @@ export default function NavBar(){
           <li
             key={item.id}
             className='p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black'>
-              {item.text}
+            <Link href="/"> {item.text} </Link>
           </li>
         ))}
       </ul>
@@ -68,7 +68,7 @@ export default function NavBar(){
             key={item.id}
             className='p-4 border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600'
           >
-            {item.text}
+            <Link href="/"> {item.text} </Link>
           </li>
         ))}
       </ul>
