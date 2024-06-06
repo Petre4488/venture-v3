@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['picsum.photos'], // Add your allowed domain here
+        domains: ['placehold.jp'], // Add your allowed domain here
       },
 };
 

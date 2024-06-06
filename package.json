@@ -18,6 +18,7 @@
   "devDependencies": {
     "@types/imagemin": "^8.0.5",
     "@types/imagemin-webp": "^7.0.3",
+    "@types/next": "^9.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
