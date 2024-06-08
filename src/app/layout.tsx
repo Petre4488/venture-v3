@@ -17,9 +17,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en">
       <body className={inter.className}>
-        <main className="flex min-h-screen flex-col items-center justify-between p-3">
+        <main className="flex min-h-screen flex-col items-center justify-between p-3 smooth-scroll">
           <NavBar/>
           {children}
           <FooterComp/>

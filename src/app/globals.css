@@ -32,24 +32,3 @@ body {
   }
 }
 
-.containerGrid {  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  justify-items: center;
-  align-items: center;
-  grid-template-areas:
-    "Card Header"
-    "CTA CTA";
-}
-
-.Card { grid-area: Card; }
-
-.Header { grid-area: Header; }
-
-.CTA {
-  justify-self: center;
-  align-self: center;
-  grid-area: CTA;
-}
