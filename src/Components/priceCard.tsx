@@ -3,14 +3,17 @@
 
 import { Card } from "flowbite-react";
 
-export default function PriceCard() {
-  return (
+export default function PriceCard(props: any) {
+    type packageName = {
+        packageName: string;
+        packagePrice: number;
+      };
+    return (
     <Card className='max-w-sm'>
-      <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Standard plan</h5>
+      <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">{props.packageName}</h5>
       <div className="flex items-baseline text-gray-900 dark:text-white">
         <span className="text-3xl font-semibold">$</span>
-        <span className="text-5xl font-extrabold tracking-tight">49</span>
-        <span className="ml-1 text-xl font-normal text-gray-500 dark:text-gray-400">/month</span>
+        <span className="text-5xl font-extrabold tracking-tight">{props.packagePrice}</span>
       </div>
       <ul className="my-7 space-y-5">
         <li className="flex space-x-3">
@@ -130,3 +133,4 @@ export default function PriceCard() {
     </Card>
   );
 }
+

@@ -1,11 +1,17 @@
+"use client";
+
 import Image from 'next/image';
 import CTA from '@/Components/CTA';
 import '../app/globals.css';
-import PriceCard from '@/Components/priceCard';
-import Swiper from 'swiper';
-import 'swiper/css';
+import PriceCard from '@/Components/PriceCard';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';;
+import useScreenSize from './Hooks/screenDetect';
 
 export default function Home() {
+  const screenSize = useScreenSize();
+  const screenWidth = screenSize.width; 
+  const isMobile = screenWidth < 640;
   return (
     <div className='container px-1  m-9'>
       <div className="container bg-blue-500 rounded flex flex-row items-center justify-center mb-10 p-3">
@@ -31,11 +37,17 @@ export default function Home() {
           <CTA />
         </div>
       </div> 
-      <div className='container flex items-center gap-4 items-center justify-center overflow-x-scroll py-4' > 
-        <PriceCard />
-        <PriceCard />
-        <PriceCard />
-      </div>
+        <div className='container flex items-center gap-4 items-center justify-center py-4' > 
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={isMobile ? 1 : 3}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}>
+            <SwiperSlide> <PriceCard packageName="Normal" packagePrice="5" /> </SwiperSlide>
+            <SwiperSlide> <PriceCard packageName="Silver" packagePrice="10"/> </SwiperSlide>
+            <SwiperSlide> <PriceCard packageName="Gold" packagePrice="15"/> </SwiperSlide>
+          </Swiper>
+        </div>
     </div>
 
   );
