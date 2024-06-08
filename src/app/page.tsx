@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import CTA from '@/Components/CTA';
 import '../app/globals.css';
-import PriceCard from '@/Components/PriceCard';
+import PricingCard from '@/Components/priceCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';;
 import useScreenSize from './Hooks/screenDetect';
@@ -43,9 +43,9 @@ export default function Home() {
             slidesPerView={isMobile ? 1 : 3}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}>
-            <SwiperSlide> <PriceCard packageName="Normal" packagePrice="5" /> </SwiperSlide>
-            <SwiperSlide> <PriceCard packageName="Silver" packagePrice="10"/> </SwiperSlide>
-            <SwiperSlide> <PriceCard packageName="Gold" packagePrice="15"/> </SwiperSlide>
+            <SwiperSlide> <PricingCard packageName="Normal" packagePrice="5" /> </SwiperSlide>
+            <SwiperSlide> <PricingCard packageName="Silver" packagePrice="10"/> </SwiperSlide>
+            <SwiperSlide> <PricingCard packageName="Gold" packagePrice="15"/> </SwiperSlide>
           </Swiper>
         </div>
     </div>

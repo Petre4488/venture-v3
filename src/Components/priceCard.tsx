@@ -3,7 +3,7 @@
 
 import { Card } from "flowbite-react";
 
-export default function PriceCard(props: any) {
+export default function PricingCard(props: any) {
     type packageName = {
         packageName: string;
         packagePrice: number;
