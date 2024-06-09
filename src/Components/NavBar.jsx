@@ -1,13 +1,19 @@
-
 "use client";
 
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
+import Image from 'next/image';
+import logo from '../../public/logo.webp'
 
 export default function Component() {
   return (
     <Navbar fluid rounded>
       <Navbar.Brand href="https://flowbite-react.com">
-        <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
+        <Image 
+        src={logo} 
+        className="mr-3 h-6 sm:h-9" 
+        alt="Flowbite React Logo" 
+        width={34} 
+        height={34} />
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
       </Navbar.Brand>
       <div className="flex md:order-2">

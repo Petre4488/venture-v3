@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import CTA from '@/Components/CTA';
 import '../app/globals.css';
-import PricingCard from '@/Components/priceCard';
+import PricingCard from '../Components/PriceCard'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';;
 import useScreenSize from './Hooks/screenDetect';
