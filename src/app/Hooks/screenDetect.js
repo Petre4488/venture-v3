@@ -1,3 +1,5 @@
+import window from 'global'
+
 // useScreenSize.js
 import { useState, useEffect } from 'react';
 
