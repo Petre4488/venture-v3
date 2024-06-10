@@ -32,3 +32,77 @@ body {
   }
 }
 
+.reactIcon svg {
+  fill: #7183e3;
+}
+
+.reactIcon span {
+  background-color: #010727; 
+  outline: 8px solid #7183e3; 
+}
+
+.textContainer {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "Take-your Take-your ."
+    ". Website Website"
+    "To-the-next To-the-next ."
+    "LEVEL . ."
+    ". . Venture";
+}
+
+.Take-your { grid-area: Take-your; }
+
+.Website { grid-area: Website; }
+
+.To-the-next {
+  justify-self: end;
+  grid-area: To-the-next;
+}
+
+.LEVEL {
+  justify-self: end;
+  grid-area: LEVEL;
+}
+
+.Venture {
+  justify-self: start;
+  grid-area: Venture;
+}
+
+.cardContainer {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px 25px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". Card1 Card2 Card3"
+    "Card4 Card5 Card6 .";
+}
+
+.Card1 { grid-area: Card1; }
+
+.Card2 { grid-area: Card2; }
+
+.Card3 { grid-area: Card3; }
+
+.Card4 { grid-area: Card4; }
+
+.Card5 { grid-area: Card5; }
+
+.Card6 { grid-area: Card6; }
+
+
+.neon-glow {
+  text-shadow:
+    0 0 0px #fff,
+    0 0 10px #f0f,
+    0 0 10px #90f,
+    0 0 20px #40f,
+    0 0 20px #f00; /* Adjust colors as needed */
+}

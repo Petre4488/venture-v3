@@ -7,6 +7,7 @@ import PricingCard from '../Components/CardPrice'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';;
 import useScreenSize from './Hooks/screenDetect';
+import TimelineComp from '@/Components/TimelineComp';
 
 export default function Home() {
   const screenSize = useScreenSize();
@@ -14,7 +15,7 @@ export default function Home() {
   const isMobile = screenWidth < 640;
   return (
     <div className='container px-1  m-9'>
-
+        {/* Text + Banner */}
       <div className="container bg-bgBlue rounded flex flex-row items-center justify-center mb-10 p-3 border border-2 border-themeBlue" >
         <div className="flex flex-col w-full pr-8 lg:w-1/4 w-2/3">
           <h1 className="text-4xl">Your partner for every marketing activity!</h1>
@@ -32,15 +33,19 @@ export default function Home() {
           />
         </div>
       </div>
-
+        {/* CTA */}
       <div className="container bg-bgBlue rounded flex flex-row items-center justify-center mb-10 p-4 border border-2 border-themeBlue ">
         <div className='container flex flex-col'> 
             <h1 className='p-5 text-2xl '>Title</h1>
           <CTA />
         </div>
       </div> 
-
-        <div className='container flex items-center gap-4 items-center justify-center py-4' > 
+        {/* Features - Timeline */}
+      <div className='container bg-bgBlue rounded flex flex-row items-center pl-10 py-10 mb-10 p-4 border border-2 border-themeBlue'>
+        <TimelineComp/>
+      </div>
+        {/* Pricing */}
+      <div className='container flex items-center gap-4 items-center justify-center py-4' > 
           <Swiper
             spaceBetween={50}
             slidesPerView={isMobile ? 1 : 3}
@@ -50,7 +55,7 @@ export default function Home() {
             <SwiperSlide> <PricingCard packageName="Silver" packagePrice="10"/> </SwiperSlide>
             <SwiperSlide> <PricingCard packageName="Gold" packagePrice="15"/> </SwiperSlide>
           </Swiper>
-        </div>
+      </div>
 
     </div>
   

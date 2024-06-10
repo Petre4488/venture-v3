@@ -6,7 +6,7 @@ import { Card } from "flowbite-react";
 export default function CTA() {
   return (
     <Card className="text-neonPink bg-bgBlue border-themeBlue">
-      <h5 className="mb-2 text-3xl font-bold ">Work fast from anywhere</h5>
+      <p className="mb-2 text-3xl font-bold ">Work fast from anywhere</p>
       <p className="mb-5 text-base sm:text-lg">
         Stay up to date and move work forward with Flowbite on iOS & Android. Download the app today.
       </p>
