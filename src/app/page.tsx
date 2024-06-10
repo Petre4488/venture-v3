@@ -14,7 +14,8 @@ export default function Home() {
   const isMobile = screenWidth < 640;
   return (
     <div className='container px-1  m-9'>
-      <div className="container bg-blue-500 rounded flex flex-row items-center justify-center mb-10 p-3">
+
+      <div className="container bg-bgBlue rounded flex flex-row items-center justify-center mb-10 p-3 border border-2 border-themeBlue" >
         <div className="flex flex-col w-full pr-8 lg:w-1/4 w-2/3">
           <h1 className="text-4xl">Your partner for every marketing activity!</h1>
           <p className="text-xs pt-4">We support your project day to day!</p>
@@ -31,12 +32,14 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="container bg-blue-500 rounded flex flex-row items-center justify-center mb-10 p-4 ">
+
+      <div className="container bg-bgBlue rounded flex flex-row items-center justify-center mb-10 p-4 border border-2 border-themeBlue ">
         <div className='container flex flex-col'> 
-            <h1>Some random text</h1>
+            <h1 className='p-5 text-2xl '>Title</h1>
           <CTA />
         </div>
       </div> 
+
         <div className='container flex items-center gap-4 items-center justify-center py-4' > 
           <Swiper
             spaceBetween={50}
@@ -48,7 +51,8 @@ export default function Home() {
             <SwiperSlide> <PricingCard packageName="Gold" packagePrice="15"/> </SwiperSlide>
           </Swiper>
         </div>
-    </div>
 
+    </div>
+  
   );
 }

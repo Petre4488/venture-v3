@@ -11,6 +11,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+
+      colors:{
+        themeBlue: '#7183e3',
+        bgBlue: '#010727',
+        neonPink: '#CE77D6',
+        pinkish: '#F1ACD0'
+      },
       width: {
         'fit-content': 'fit-content',
       },

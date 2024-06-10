@@ -1,49 +1,34 @@
+
 "use client";
 
-import { Avatar, Dropdown, Navbar } from "flowbite-react";
-import Image from 'next/image';
-import logo from '../../public/logo.webp'
+import Link from "next/link";
+import Image from "next/image";
+import { Navbar } from "flowbite-react";
+import Logo from "../../public/logo.webp"
 
-export default function Component() {
+export default function NavBar() {
   return (
-    <Navbar fluid rounded>
-      <Navbar.Brand href="https://flowbite-react.com">
-        <Image 
-        src={logo} 
-        className="mr-3 h-6 sm:h-9" 
-        alt="Flowbite React Logo" 
-        width={34} 
-        height={34} />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
+    <Navbar fluid rounded className="border border-2 border-themeBlue bg-bgBlue ">
+      <Navbar.Brand as={Link} href="/">
+        <Image
+          src={Logo}
+          alt="Flowbite React"
+          width={40}
+          height={40}
+          className="rounded-full"/>
+        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Venture</span>
       </Navbar.Brand>
-      <div className="flex md:order-2">
-        <Dropdown
-          arrowIcon={false}
-          inline
-          label={
-            <Avatar alt="User settings" img="https://flowbite.com/docs/images/people/profile-picture-5.jpg" rounded />
-          }
-        >
-          <Dropdown.Header>
-            <span className="block text-sm">Bonnie Green</span>
-            <span className="block truncate text-sm font-medium">name@flowbite.com</span>
-          </Dropdown.Header>
-          <Dropdown.Item>Dashboard</Dropdown.Item>
-          <Dropdown.Item>Settings</Dropdown.Item>
-          <Dropdown.Item>Earnings</Dropdown.Item>
-          <Dropdown.Divider />
-          <Dropdown.Item>Sign out</Dropdown.Item>
-        </Dropdown>
-        <Navbar.Toggle />
-      </div>
-      <Navbar.Collapse>
-        <Navbar.Link href="#" active>
+      <Navbar.Toggle />
+      <Navbar.Collapse className="pl-4">
+        <Navbar.Link href="/" active className="text-neonPink">
           Home
         </Navbar.Link>
-        <Navbar.Link href="#">About</Navbar.Link>
-        <Navbar.Link href="#">Services</Navbar.Link>
-        <Navbar.Link href="#">Pricing</Navbar.Link>
-        <Navbar.Link href="#">Contact</Navbar.Link>
+        <Navbar.Link as={Link} href="/about" className="text-neonPink">
+          About
+        </Navbar.Link>
+        <Navbar.Link href="#" className="text-neonPink">Services</Navbar.Link>
+        <Navbar.Link href="#" className="text-neonPink">Pricing</Navbar.Link>
+        <Navbar.Link href="#" className="text-neonPink">Contact</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );
