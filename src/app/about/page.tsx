@@ -1,3 +1,5 @@
+"use client";
+
 import '../globals.css'; 
 import SimpleCard from '../../Components/SimpleCard';
 
@@ -14,14 +16,18 @@ export default function About() {
             </div>
             <div className='container flex flex-row items-center justify-center p-10'>
                 <div className="cardContainer">
-                    <div className="Card1"> <SimpleCard/> </div>
-                    <div className="Card2"> <SimpleCard/> </div>
-                    <div className="Card3"> <SimpleCard/> </div>
-                    <div className="Card4"> <SimpleCard/> </div>
-                    <div className="Card5"> <SimpleCard/> </div>
-                    <div className="Card6"> <SimpleCard/> </div>
+                    <div className="Card1 squareShadow" onClick={swipeCard}> <SimpleCard/> </div>
+                    <div className="Card2 squareShadow" onClick={swipeCard}> <SimpleCard/> </div>
+                    <div className="Card3 squareShadow" onClick={swipeCard}> <SimpleCard/> </div>
+                    <div className="Card4 squareShadow" onClick={swipeCard}> <SimpleCard/> </div>
+                    <div className="Card5 squareShadow" onClick={swipeCard}> <SimpleCard/> </div>
+                    <div className="Card6 squareShadow" onClick={swipeCard}> <SimpleCard/> </div>
                 </div>
             </div>
        </div>
     )
+}
+
+export function swipeCard(){
+    console.log('swipeCard')
 }

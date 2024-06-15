@@ -3,18 +3,21 @@
 
 import { Card } from "flowbite-react";
 
-export default function PricingCard(props: any) {
+export default function PricingCard(props: any , isAvailable: boolean) {
     type packageName = {
         packageName: string;
         packagePrice: number;
       };
     return (
     <Card className='max-w-sm border border-2 border-themeBlue bg-bgBlue'>
+      {/* Package Name */}
       <h5 className="mb-4 text-xl font-medium text-neonPink">{props.packageName}</h5>
+      {/* Package Price */}
       <div className="flex items-baseline text-neonPink">
         <span className="text-3xl font-semibold">$</span>
         <span className="text-5xl font-extrabold tracking-tight">{props.packagePrice}</span>
       </div>
+      {/* Package servieces */}
       <ul className="my-7 space-y-5">
         <li className="flex space-x-3">
           <svg
@@ -47,7 +50,7 @@ export default function PricingCard(props: any) {
           <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">
             20GB Cloud storage
           </span>
-        </li>
+        </li> 
         <li className="flex space-x-3">
           <svg
             className="h-5 w-5 shrink-0 text-neonPink"
@@ -63,7 +66,7 @@ export default function PricingCard(props: any) {
           </svg>
           <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Integration help</span>
         </li>
-        <li className="flex space-x-3 line-through decoration-gray-500">
+        <li className="flex space-x-3">
           <svg
             className="h-5 w-5 shrink-0 text-gray-400 dark:text-gray-500"
             fill="currentColor"
@@ -78,7 +81,7 @@ export default function PricingCard(props: any) {
           </svg>
           <span className="text-base font-normal leading-tight text-gray-500">Sketch Files</span>
         </li>
-        <li className="flex space-x-3 line-through decoration-gray-500">
+        <li className="flex space-x-3">
           <svg
             className="h-5 w-5 shrink-0 text-gray-400 dark:text-gray-500"
             fill="currentColor"
@@ -93,7 +96,7 @@ export default function PricingCard(props: any) {
           </svg>
           <span className="text-base font-normal leading-tight text-gray-500">API Access</span>
         </li>
-        <li className="flex space-x-3 line-through decoration-gray-500">
+        <li className="flex space-x-3">
           <svg
             className="h-5 w-5 shrink-0 text-gray-400 dark:text-gray-500"
             fill="currentColor"
@@ -108,7 +111,7 @@ export default function PricingCard(props: any) {
           </svg>
           <span className="text-base font-normal leading-tight text-gray-500">Complete documentation</span>
         </li>
-        <li className="flex space-x-3 line-through decoration-gray-500">
+        <li className="flex space-x-3">
           <svg
             className="h-5 w-5 shrink-0 text-gray-400 dark:text-gray-500"
             fill="currentColor"

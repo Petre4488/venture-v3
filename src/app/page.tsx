@@ -51,7 +51,7 @@ export default function Home() {
             slidesPerView={isMobile ? 1 : 3}
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}>
-            <SwiperSlide> <PricingCard packageName="Normal" packagePrice="5" /> </SwiperSlide>
+            <SwiperSlide> <PricingCard packageName="Normal" packagePrice="5"  /> </SwiperSlide>
             <SwiperSlide> <PricingCard packageName="Silver" packagePrice="10"/> </SwiperSlide>
             <SwiperSlide> <PricingCard packageName="Gold" packagePrice="15"/> </SwiperSlide>
           </Swiper>

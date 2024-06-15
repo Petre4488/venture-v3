@@ -106,3 +106,73 @@ body {
     0 0 20px #40f,
     0 0 20px #f00; /* Adjust colors as needed */
 }
+
+.squareShadow{
+  box-shadow:
+    0 0 0px #fff,
+    0 0 10px #f0f,
+    0 0 10px #90f,
+    0 0 20px #40f,
+    0 0 20px #f00;
+    transform: rotateX(-8deg) rotateY(10deg);
+    -webkit-animation:change-color 2s ease-in-out 0s infinite normal;
+    -moz-animation:change-color 2s ease-in-out 0s infinite normal;
+    -ms-animation:change-color 2s ease-in-out 0s infinite normal;
+    animation:change-color 2s ease-in-out 0s infinite normal; 
+}
+
+
+@-webkit-keyframes change-color {
+  0%{
+    box-shadow:
+    0 0 0px #fff,
+    0 0 0px #f0f,
+    0 0 0px #90f,
+    0 0 0px #40f,
+    0 0 0px #f00;
+   }
+  50%{ 
+    box-shadow:
+    0 0 0px #fff,
+    0 0 5px #f0f,
+    0 0 5px #90f,
+    0 0 10px #40f,
+    0 0 10px #f00;
+   }
+  100%{
+    box-shadow:
+    0 0 0px #fff,
+    0 0 0px #f0f,
+    0 0 0px #90f,
+    0 0 0px #40f,
+    0 0 0px #f00;
+   }
+  }
+  
+  @keyframes change-color {
+    0%{
+      box-shadow:
+      0 0 0px #fff,
+      0 0 0px #f0f,
+      0 0 0px #90f,
+      0 0 0px #40f,
+      0 0 0px #f00;
+     }
+    50%{ 
+      box-shadow:
+      0 0 0px #fff,
+      0 0 5px #f0f,
+      0 0 5px #90f,
+      0 0 10px #40f,
+      0 0 10px #f00;
+     }
+    100%{
+      box-shadow:
+      0 0 0px #fff,
+      0 0 0px #f0f,
+      0 0 0px #90f,
+      0 0 0px #40f,
+      0 0 0px #f00;
+     }
+  }
+
