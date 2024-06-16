@@ -8,13 +8,22 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';;
 import useScreenSize from './Hooks/screenDetect';
 import TimelineComp from '@/Components/TimelineComp';
+import Carousel from '@/Components/Carousel';
+// import FadeInOnScroll from './Hooks/FadeInOnScroll'
+import {
+  motion,
+  useInView,
+  useMotionValueEvent,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 
 export default function Home() {
   const screenSize = useScreenSize();
   const screenWidth = screenSize.width; 
   const isMobile = screenWidth < 640;
   return (
-    <div className='container px-1  m-9'>
+    <div className='container px-1  mb-9'>
         {/* Text + Banner */}
       <div className="container bg-bgBlue rounded flex flex-row items-center justify-center mb-10 p-3 border border-2 border-themeBlue" >
         <div className="flex flex-col w-full pr-8 lg:w-1/4 w-2/3">
@@ -44,19 +53,26 @@ export default function Home() {
       <div className='container bg-bgBlue rounded flex flex-row items-center pl-10 py-10 mb-10 p-4 border border-2 border-themeBlue'>
         <TimelineComp/>
       </div>
-        {/* Pricing */}
-      <div className='container flex items-center gap-4 items-center justify-center py-4' > 
-          <Swiper
-            spaceBetween={50}
-            slidesPerView={isMobile ? 1 : 3}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}>
-            <SwiperSlide> <PricingCard packageName="Normal" packagePrice="5"  /> </SwiperSlide>
-            <SwiperSlide> <PricingCard packageName="Silver" packagePrice="10"/> </SwiperSlide>
-            <SwiperSlide> <PricingCard packageName="Gold" packagePrice="15"/> </SwiperSlide>
-          </Swiper>
+        {/* Carousel */}
+      <div className='container bg-bgBlue rounded h-1/5 flex flex-row items-center justify-center mb-10 p-4 border border-2 border-themeBlue'>
+        <Carousel/>
       </div>
-
+        {/* Pricing */}
+        <motion.div className='container flex items-center gap-4 items-center justify-center py-4' 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{amount: 0.33}}
+        > 
+            <Swiper
+              spaceBetween={50}
+              slidesPerView={isMobile ? 1 : 3}
+              onSlideChange={() => console.log('slide change')}
+              onSwiper={(swiper) => console.log(swiper)}>
+              <SwiperSlide> <PricingCard packageName="Normal" packagePrice="5"  /> </SwiperSlide>
+              <SwiperSlide> <PricingCard packageName="Silver" packagePrice="10"/> </SwiperSlide>
+              <SwiperSlide> <PricingCard packageName="Gold" packagePrice="15"/> </SwiperSlide>
+            </Swiper>
+        </motion.div>
     </div>
   
   );

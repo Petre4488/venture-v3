@@ -8,7 +8,7 @@ import Logo from "../../public/logo.webp"
 
 export default function NavBar() {
   return (
-    <Navbar fluid rounded className="border border-2 border-themeBlue bg-bgBlue ">
+    <Navbar fluid rounded className="border border-2 border-themeBlue bg-bgBlue mb-5 ">
       <Navbar.Brand as={Link} href="/">
         <Image
           src={Logo}
