@@ -8,14 +8,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';;
 import useScreenSize from './Hooks/screenDetect';
 import TimelineComp from '@/Components/TimelineComp';
-import Carousel from '@/Components/Carousel';
-// import FadeInOnScroll from './Hooks/FadeInOnScroll'
 import {
   motion,
-  useInView,
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
 } from "framer-motion";
 
 export default function Home() {
@@ -53,12 +47,8 @@ export default function Home() {
       <div className='container bg-bgBlue rounded flex flex-row items-center pl-10 py-10 mb-10 p-4 border border-2 border-themeBlue'>
         <TimelineComp/>
       </div>
-        {/* Carousel */}
-      <div className='container bg-bgBlue rounded h-1/5 flex flex-row items-center justify-center mb-10 p-4 border border-2 border-themeBlue'>
-        <Carousel/>
-      </div>
         {/* Pricing */}
-        <motion.div className='container flex items-center gap-4 items-center justify-center py-4' 
+        {/* <motion.div className='container flex items-center gap-4 items-center justify-center py-4' 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{amount: 0.33}}
@@ -68,11 +58,11 @@ export default function Home() {
               slidesPerView={isMobile ? 1 : 3}
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper)}>
-              <SwiperSlide> <PricingCard packageName="Normal" packagePrice="5"  /> </SwiperSlide>
-              <SwiperSlide> <PricingCard packageName="Silver" packagePrice="10"/> </SwiperSlide>
-              <SwiperSlide> <PricingCard packageName="Gold" packagePrice="15"/> </SwiperSlide>
+              <SwiperSlide> <PricingCard packageName="Normal Pack" packagePrice="5"  /> </SwiperSlide>
+              <SwiperSlide> <PricingCard packageName="Silver Pack" packagePrice="10"/> </SwiperSlide>
+              <SwiperSlide> <PricingCard packageName="Golden Pack" packagePrice="15"/> </SwiperSlide>
             </Swiper>
-        </motion.div>
+        </motion.div> */}
     </div>
   
   );

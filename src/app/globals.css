@@ -176,3 +176,51 @@ body {
      }
   }
 
+  .pricesGrid {  
+    margin: 3%;
+    margin-top: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "cardP1 cardP1 cardP2 cardP2 cardP3 cardP3"
+      "cardP4 cardP4 cardP5 cardP5 cardP6 cardP6"
+      ". cardP7 cardP7 cardP8 cardP8 .";
+  }
+  
+  @media only screen and (max-width: 640px) {
+    .pricesGrid {  
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 15px 15px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "cardP1 cardP1"
+        "cardP2 cardP2" 
+        "cardP3 cardP3"
+        "cardP4 cardP4" 
+        "cardP5 cardP5" 
+        "cardP6 cardP6"
+        "cardP7 cardP7" 
+        "cardP8 cardP8";
+    }
+  }
+
+  .cardP1 { grid-area: cardP1; }
+  
+  .cardP2 { grid-area: cardP2; }
+  
+  .cardP3 { grid-area: cardP3; }
+  
+  .cardP4 { grid-area: cardP4; }
+  
+  .cardP5 { grid-area: cardP5; }
+  
+  .cardP6 { grid-area: cardP6; }
+  
+  .cardP7 { grid-area: cardP7; }
+  
+  .cardP8 { grid-area: cardP8; }
+  
