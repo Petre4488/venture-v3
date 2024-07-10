@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function CardServices(props) {
   return (
     <Card
-      className="max-w-sm bg-bgBlue border border-2 border-themeBlue"
+      className="max-w-sm bg-bgBlue border-2 border-themeBlue"
       renderImage={() => <Image width={500} height={500} src={props.image} alt={props.alt} />}
     >
       <h5 className="text-2xl font-bold tracking-tight text-neonPink">
