@@ -9,7 +9,7 @@ import Logo from "../../public/logo.webp"
 export default function NavBar() {
   {/* TODO: Make unactivated navbar wider on phone */}
   return (
-    <Navbar fluid rounded className="border border-2 border-themeBlue bg-bgBlue mb-5 ">
+    <Navbar fluid className="w-[80%] rounded-xl border-2 border-themeBlue bg-bgBlue mb-5 ">
       <Navbar.Brand as={Link} href="/">
         <Image
           src={Logo}
