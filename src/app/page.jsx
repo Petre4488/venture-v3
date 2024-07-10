@@ -5,33 +5,33 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 import ButtonEncrypt from '../Components/EncryptButton.jsx'
 
-export const TextParallaxContentExample = () => {
-  return (
+export default function LandingPage(){
+  return(
     <div className="w-full">
-      <TextParallaxContent
-        imgUrl='https://images.unsplash.com/photo-1608752027817-eaa02f60bf6d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-        subheading="Limitless"
-        heading="Think Unlimited, We Build It."
-      >
-        <ExampleContent />
-      </TextParallaxContent>
-      <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1564296787288-965670228331?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        subheading="Agile"
-        heading="Launch faster, achieve more."
-      >
-        <ExampleContent />
-      </TextParallaxContent>  
-      <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1573804613658-6e8bc17661c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D  "
-        subheading="Creative"
-        heading="Code that Captivates."
-      >
-        <ExampleContent />
-      </TextParallaxContent>
-    </div>
-  );
-};
+    <TextParallaxContent
+      imgUrl='https://images.unsplash.com/photo-1608752027817-eaa02f60bf6d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+      subheading="Limitless"
+      heading="Think Unlimited, We Build It."
+    >
+      <ExampleContent />
+    </TextParallaxContent>
+    <TextParallaxContent
+      imgUrl="https://images.unsplash.com/photo-1564296787288-965670228331?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      subheading="Agile"
+      heading="Launch faster, achieve more."
+    >
+      <ExampleContent />
+    </TextParallaxContent>  
+    <TextParallaxContent
+      imgUrl="https://images.unsplash.com/photo-1573804613658-6e8bc17661c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D  "
+      subheading="Creative"
+      heading="Code that Captivates."
+    >
+      <ExampleContent />
+    </TextParallaxContent>
+  </div>
+  )
+}
 
 const IMG_PADDING = 12;
 
@@ -132,5 +132,3 @@ const ExampleContent = () => (
     </div>
   </div>
 );
-
-export default TextParallaxContentExample
