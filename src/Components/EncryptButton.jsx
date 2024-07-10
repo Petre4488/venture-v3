@@ -9,7 +9,7 @@ const ButtonEncrypt = () => {
     </div>
   );
 };
-const TARGET_TEXT = 'Learn More';
+const TARGET_TEXT = 'Limitless';
 const CYCLES_PER_LETTER = 2;
 const SHUFFLE_TIME = 50;
 
