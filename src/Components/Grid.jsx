@@ -4,12 +4,13 @@ import React, { createContext } from 'react';
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
-import { SiGithub, SiTiktok, SiTwitter, SiYoutube } from "react-icons/si";
+import { SiGithub, SiTiktok, SiInstagram } from "react-icons/si";
+import Image from "next/image";
+import myself from "../../public/myself.png";
 
 const RevealBento = () => {
   return (
-    <div className="container bg-bgBlue rounded h-1/5 flex flex-col items-center justify-center mb-10 p-4 border border-2 border-themeBlue">
-      <Logo />
+    <div className="container bg-bgBlue rounded h-1/5 flex flex-col items-center justify-center mb-10 p-4 border-2 border-themeBlue">
       <motion.div
         initial="initial"
         animate="animate"
@@ -21,8 +22,6 @@ const RevealBento = () => {
         <HeaderBlock />
         <SocialsBlock />
         <AboutBlock />
-        {/* <LocationBlock /> */}
-        {/* <EmailListBlock /> */}
       </motion.div>
       <Footer />
     </div>
@@ -61,19 +60,20 @@ const Block = ({ className, ...rest }) => {
 
 const HeaderBlock = () => (
   <Block className="col-span-12 row-span-2 md:col-span-6">
-    <img
-      src="https://api.dicebear.com/8.x/lorelei-neutral/svg?seed=John"
-      alt="avatar"
-      className="mb-4 size-14 rounded-full"
+    <Image
+      src={myself}
+      alt="Peter"
+      style={{ width: "3.5rem" , height: "3.5rem"}}
+      className="mb-4 rounded-full"
     />
     <h1 className="mb-12 text-4xl font-medium leading-tight">
-      Hey! Im Peter!.{" "}
+      Hey! Im Peter!{" "}
       <span className="text-zinc-400">
         Founder of Venture!
       </span>
     </h1>
     <a
-      href="#"
+      href="mailto:petrecirceag@venturegroup.cc?subject=Business Inquiry"
       className="flex items-center gap-1 text-red-300 hover:underline"
     >
       Contact me <FiArrowRight />
@@ -83,7 +83,7 @@ const HeaderBlock = () => (
 
 const SocialsBlock = () => (
   <>
-    <Block
+    {/* <Block
       whileHover={{
         rotate: "2.5deg",
         scale: 1.1,
@@ -96,7 +96,7 @@ const SocialsBlock = () => (
       >
         <SiYoutube />
       </a>
-    </Block>
+    </Block> */}
     <Block
       whileHover={{
         rotate: "-2.5deg",
@@ -105,7 +105,7 @@ const SocialsBlock = () => (
       className="col-span-6 bg-green-600 md:col-span-3"
     >
       <a
-        href="#"
+        href="https://github.com/Petre4488"
         className="grid h-full place-content-center text-3xl text-white"
       >
         <SiGithub />
@@ -119,7 +119,7 @@ const SocialsBlock = () => (
       className="col-span-6 bg-zinc-50 md:col-span-3"
     >
       <a
-        href="#"
+        href="https://www.tiktok.com/@venturegroup.ag#"
         className="grid h-full place-content-center text-3xl text-black"
       >
         <SiTiktok />
@@ -130,13 +130,13 @@ const SocialsBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-blue-500 md:col-span-3"
+      className="col-span-6 bg-pink-600 md:col-span-3"
     >
       <a
-        href="#"
+        href="https://www.instagram.com/venturegroup.ag/"
         className="grid h-full place-content-center text-3xl text-white"
       >
-        <SiTwitter />
+        <SiInstagram />
       </a>
     </Block>
   </>
@@ -145,11 +145,12 @@ const SocialsBlock = () => (
 const AboutBlock = () => (
   <Block className="col-span-12 text-3xl leading-snug">
     <p>
-      My passion is building cool stuff.{" "}
+    Always up for a challenge and a good learning opportunity!{" "}
       <span className="text-zinc-400">
-        I build primarily with React, Tailwind CSS, and Framer Motion. I love
-        this stack so much that I even built a website about it. Ive made over
-        a hundred videos on the subject across YouTube and TikTok.
+      Im a technical product manager and leader who thrives on using data to tell compelling stories and make informed decisions. 
+      My insatiable curiosity fuels my drive to constantly learn and expand my knowledge base. This passion for knowledge
+      translates into my leadership style, where I foster a collaborative environment that encourages continuous learning and
+      innovation.
       </span>
     </p>
   </Block>

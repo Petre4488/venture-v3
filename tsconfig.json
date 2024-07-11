@@ -32,7 +32,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts", "src/Components/simpleCard.jsx", "src/Components/Carousel.jsx", "src/app/about/page.jsx", "src/app/page.jsx", "src/Components/EncryptButton.jsx", ],
+    ".next/types/**/*.ts", "src/Components/simpleCard.jsx", "src/Components/Carousel.jsx", "src/app/about/page.jsx", "src/app/page.jsx", "src/Components/EncryptButton.jsx", "src/app/prices/page.jsx", ],
   "exclude": [
     "node_modules"
   ]
