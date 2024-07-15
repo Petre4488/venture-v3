@@ -6,7 +6,7 @@ import { HiMail } from "react-icons/hi";
 import ToS from "@/Components/ToS";
 import React, { useState } from 'react';
 import { db }from '../firebaseConfig'
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 async function addContact(name, email, service) {
     try {
@@ -14,6 +14,7 @@ async function addContact(name, email, service) {
             name: name,
             email: email,
             service: service,
+            createdAt: serverTimestamp()
         });
         console.log("Document written with ID: ", docRef.id);
         return true;

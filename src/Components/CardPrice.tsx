@@ -9,7 +9,7 @@ export default function PricingCard(props: any , isAvailable: boolean) {
         packagePrice: number;
       };
     return (
-    <Card className='max-w-sm border border-2 border-themeBlue bg-bgBlue'>
+    <Card className='max-w-sm border-2 border-themeBlue bg-bgBlue'>
       {/* Package Name */}
       <h5 className="mb-4 text-xl font-medium text-neonPink">{props.packageName}</h5>
       {/* Package Price */}
@@ -129,7 +129,7 @@ export default function PricingCard(props: any , isAvailable: boolean) {
       </ul>
       <button
         type="button"
-        className="inline-flex border border-2 border-themeBlue w-full justify-center rounded-lg bg-bgBlue px-5 py-2.5 text-center text-sm font-medium text-neonPink hover:border-neonPink focus:outline-none focus:ring-4 focus:ring-cyan-200 dark:focus:ring-cyan-900"
+        className="inline-flex border-2 border-themeBlue w-full justify-center rounded-lg bg-bgBlue px-5 py-2.5 text-center text-sm font-medium text-neonPink hover:border-neonPink focus:outline-none focus:ring-4 focus:ring-cyan-200 dark:focus:ring-cyan-900"
       >
         Choose plan
       </button>
