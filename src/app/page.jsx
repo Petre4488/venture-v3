@@ -13,14 +13,14 @@ export default function LandingPage(){
       subheading="Limitless"
       heading="Think Unlimited, We Build It."
     >
-      <ExampleContent heading='Unleash Your Vision. Build Without Limits.' paragraph= "Feeling constrained by cookie-cutter website templates?  Venture breaks the mold.  We collaborate with you to craft a website that reflects your unique brand and pushes the boundaries of what's possible.  There's no limit to our creativity or technical expertise.  Let's build a website that fuels your growth and ignites your audiences imagination." />
+      <ExampleContent heading='Unleash Your Vision. Build Without Limits.' paragraph= "Feeling stifled by cookie-cutter website templates? Venture breaks free from the mold. We don't just develop websites; we collaborate closely with you to code a digital presence that truly embodies your unique brand. Our approach pushes beyond the ordinary, exploring new frontiers of creativity and technical expertise to craft fast websites that deliver exceptional user experiences. There are no bounds to what we can achieve together. Let's embark on a journey to create a website that not only fuels your growth but also captivates and inspires your audience's imagination." />
     </TextParallaxContent>
     <TextParallaxContent
       imgUrl="https://images.unsplash.com/photo-1564296787288-965670228331?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       subheading="Agile"
       heading="Launch faster, achieve more."
     >
-      <ExampleContent heading="Launch Faster. Achieve More." paragraph="In today's fast-paced world, speed is essential.  Venture's agile development process ensures your website goes from concept to launch quickly and efficiently.  We embrace change and adapt to your needs,  so your website is always optimized for success.  Don't get stuck waiting –  get your website up and running fast and start achieving your goals sooner." />
+      <ExampleContent heading="Launch Faster. Achieve More." paragraph="In today's rapidly evolving digital landscape, speed is paramount. At Venture, our agile development process guarantees your website moves swiftly from concept to launch, ensuring efficiency every step of the way. We thrive on embracing change and tailoring solutions to your evolving needs, ensuring your website is continually optimized for success. Don't waste time waiting around – partner with us to swiftly bring your website to life and start achieving your goals sooner than you thought possible." />
     </TextParallaxContent>  
     <TextParallaxContent
       imgUrl="https://images.unsplash.com/photo-1573804613658-6e8bc17661c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D  "
@@ -104,10 +104,10 @@ const OverlayCopy = ({ subheading, heading }) => {
       ref={targetRef}
       className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white"
     >
-      <p className="mb-2 text-center text-xl md:mb-4 md:text-3xl">
+      <h2 className="mb-2 text-center text-xl md:mb-4 md:text-3xl">
         {subheading}
-      </p>
-      <p className="text-center text-4xl font-bold md:text-7xl">{heading}</p>
+      </h2>
+      <h1 className="text-center text-4xl font-bold md:text-7xl">{heading}</h1>
     </motion.div>
   );
 };

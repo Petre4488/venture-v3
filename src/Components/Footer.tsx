@@ -8,10 +8,10 @@ export default function FooterComp() {
     <Footer container className="mt-3 border-2 border-themeBlue bg-bgBlue" >
       <Footer.Copyright href="#" by="Venture™" year={2024} />
       <Footer.LinkGroup>
-        <Footer.Link href="#">About</Footer.Link>
-        <Footer.Link href="#">Privacy Policy</Footer.Link>
+        <Footer.Link href="https://www.venturegroup.cc/about">About</Footer.Link>
+        <Footer.Link href="https://www.agencyrevolution.com/privacy-policy/">Privacy Policy</Footer.Link>
         <Footer.Link href="#">Licensing</Footer.Link>
-        <Footer.Link href="#">Contact</Footer.Link>
+        <Footer.Link href="https://instagram.com/venturegroup.ag">Contact</Footer.Link>
       </Footer.LinkGroup>
     </Footer>
   );

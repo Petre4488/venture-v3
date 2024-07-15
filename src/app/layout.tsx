@@ -7,7 +7,7 @@ import FooterComp from '../Components/Footer'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Venture",
+  title: "Venture Group Agency",
   description: "Creative Web Design & Development for Startups. We craft user-friendly websites that capture attention, convert visitors, and fuel your growth. ",
 };
 
