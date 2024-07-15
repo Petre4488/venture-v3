@@ -4,10 +4,32 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 import ButtonEncrypt from '../Components/EncryptButton.jsx'
+import Head from 'next/head';
 
 export default function LandingPage(){
   return(
     <div className="w-full">
+      <Head>
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Venture Group Agency",
+            "url": "https://venturegroup.cc",
+            "logo": "https://i.ibb.co/TrSXdcC/logo-Dark-Transp.png",
+            "contactPoint": {
+              "@type": "Petre Circeag",
+              "telephone": "+40 753989970",
+              "contactType": "Customer Service"
+            },
+            "sameAs": [
+              "http://www.instagram.com/venturegroup.ag",
+            ],
+          }
+        `}
+      </script>
+    </Head>
     <TextParallaxContent
       imgUrl='https://images.unsplash.com/photo-1608752027817-eaa02f60bf6d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       subheading="Limitless"
@@ -20,14 +42,14 @@ export default function LandingPage(){
       subheading="Agile"
       heading="Launch faster, achieve more."
     >
-      <ExampleContent heading="Launch Faster. Achieve More." paragraph="In today's rapidly evolving digital landscape, speed is paramount. At Venture, our agile development process guarantees your website moves swiftly from concept to launch, ensuring efficiency every step of the way. We thrive on embracing change and tailoring solutions to your evolving needs, ensuring your website is continually optimized for success. Don't waste time waiting around – partner with us to swiftly bring your website to life and start achieving your goals sooner than you thought possible." />
+      <ExampleContent heading="Launch Faster. Achieve More." paragraph="In today's rapidly evolving digital landscape, speed is paramount. At Venture agency, our agile development process guarantees your website moves swiftly from concept to launch, ensuring efficiency every step of the way. We thrive on embracing change and tailoring solutions to your evolving needs, ensuring your website is continually optimized for success. Don't waste time waiting around – partner with us at Venture agency to swiftly bring your website to life and start achieving your goals sooner than you thought possible." />
     </TextParallaxContent>  
     <TextParallaxContent
       imgUrl="https://images.unsplash.com/photo-1573804613658-6e8bc17661c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D  "
       subheading="Creative"
       heading="Code that Captivates."
     >
-      <ExampleContent heading="Websites that Captivate.  Code that Inspires." paragraph="Your website is an extension of your brand, and it deserves to be as unique and inspiring as your vision.  Venture doesn't just build websites, we create digital experiences that capture attention and spark emotions.  We combine creative vision with technical mastery to craft websites that stand out from the crowd and leave a lasting impression.  Let's turn your website into a masterpiece that reflects your brand's true potential." />
+      <ExampleContent heading="Websites that Captivate.  Code that Inspires." paragraph="our website is an extension of your brand, and it deserves to be as unique and inspiring as your vision. At Venture, we don't just build websites, we create digital experiences that capture attention and spark emotions. We combine creative vision with technical mastery to craft websites that stand out from the crowd and leave a lasting impression. Let's partner with Venture to turn your website into a masterpiece that reflects your brand's true potential. " />
     </TextParallaxContent>
   </div>
   )
