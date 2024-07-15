@@ -8,12 +8,12 @@ import React, { useState } from 'react';
 import { db }from '../firebaseConfig'
 import { collection, addDoc } from "firebase/firestore";
 
-async function addContact(name, email, date) {
+async function addContact(name, email, service) {
     try {
         const docRef = await addDoc(collection(db, "contacts"), {
             name: name,
             email: email,
-            date: date
+            service: service,
         });
         console.log("Document written with ID: ", docRef.id);
         return true;
@@ -27,16 +27,16 @@ async function addContact(name, email, date) {
 export default function Contact(){
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [date, setDate] = useState('');
+    const [service, setService] = useState('');
     const [showComponent, setShowComponent] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const added = await addDataToFirestore(name, email, date);
+        const added = await addContact(name, email, service);
         if (added){
             setName('');
             setEmail('');
-            setDate('');
+            setService('');
             alert('Data added successfully');
         }
     }
@@ -56,19 +56,22 @@ export default function Contact(){
                         </p>
                     </div>
 
-                    <form>
+                    <form onSubmit={handleSubmit} >
 
                         <input
                                 className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                type="text" placeholder="Name" name="name"/>
+                                type="text" placeholder="Name" name="name" htmlFor='name'
+                                value={name} onChange={(e) => setName(e.target.value)}/>
 
                         <input
                                 className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                type="email" placeholder="Email" name="email"/>
+                                type="email" placeholder="Email" name="email" htmlFor='email' 
+                                value={email} onChange={(e) => setEmail(e.target.value)} />
 
                         <input
                                 className="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                type="text" placeholder="Services you want" name="_subject"/>
+                                type="text" placeholder="Services you want" name="_subject" htmlFor='service' 
+                                value={service} onChange={(e) => setService(e.target.value) } />
 
                         <div className="flex justify-between">
                             <input
