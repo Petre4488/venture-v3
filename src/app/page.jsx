@@ -4,32 +4,10 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 import ButtonEncrypt from '../Components/EncryptButton.jsx'
-import Head from 'next/head';
 
 export default function LandingPage(){
   return(
     <div className="w-full">
-      <Head>
-      <script type="application/ld+json">
-        {`
-          {
-            "@context": "http://schema.org",
-            "@type": "Organization",
-            "name": "Venture Group Agency",
-            "url": "https://venturegroup.cc",
-            "logo": "https://i.ibb.co/TrSXdcC/logo-Dark-Transp.png",
-            "contactPoint": {
-              "@type": "Petre Circeag",
-              "telephone": "+40 753989970",
-              "contactType": "Customer Service"
-            },
-            "sameAs": [
-              "http://www.instagram.com/venturegroup.ag",
-            ],
-          }
-        `}
-      </script>
-    </Head>
     <TextParallaxContent
       imgUrl='https://images.unsplash.com/photo-1608752027817-eaa02f60bf6d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       subheading="Limitless"
