@@ -147,9 +147,9 @@ const AboutBlock = () => (
     <p>
     Always up for a challenge and a good learning opportunity!{" "}
       <span className="text-zinc-400">
-      Im a technical product manager and leader who thrives on using data to tell compelling stories and make informed decisions. 
-      My insatiable curiosity fuels my drive to constantly learn and expand my knowledge base. This passion for knowledge
-      translates into my leadership style, where I foster a collaborative environment that encourages continuous learning and
+      As a technical product manager and leader, I thrive on using data to tell compelling stories and make informed decisions.
+      My insatiable curiosity fuels my drive to constantly learn and expand my knowledge base. This passion for knowledge 
+      translates into my leadership style, where I foster a collaborative environment that encourages continuous learning and 
       innovation.
       </span>
     </p>
