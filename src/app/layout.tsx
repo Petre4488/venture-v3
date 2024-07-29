@@ -41,6 +41,7 @@ export default function RootLayout({
           }
         `}
       </script>
+      <link rel="canonical" href="https://www.venturegroup.cc"/>
     </Head>
     <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-M7P7ZC9L2K"></Script>
         <script

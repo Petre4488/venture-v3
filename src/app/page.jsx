@@ -27,7 +27,7 @@ export default function LandingPage(){
       subheading="Creative"
       heading="Code that Captivates."
     >
-      <ExampleContent heading="Websites that Captivate.  Code that Inspires." paragraph="our website is an extension of your brand, and it deserves to be as unique and inspiring as your vision. At Venture, we don't just build websites, we create digital experiences that capture attention and spark emotions. We combine creative vision with technical mastery to craft websites that stand out from the crowd and leave a lasting impression. Let's partner with Venture to turn your website into a masterpiece that reflects your brand's true potential. " />
+      <ExampleContent heading="We Know You Need a Website.  Here’s Why and How We Can Help" paragraph="In today's world, having a website is essential for making your mark, connecting with your audience, and growing your business. At Venture Group, we create custom websites that are not only visually appealing but also work flawlessly. Our advanced tools and technology ensure your site is fast, secure, and adaptable. Let us help you stand out online and achieve lasting success." />
     </TextParallaxContent>
   </div>
   )

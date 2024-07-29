@@ -83,20 +83,6 @@ const HeaderBlock = () => (
 
 const SocialsBlock = () => (
   <>
-    {/* <Block
-      whileHover={{
-        rotate: "2.5deg",
-        scale: 1.1,
-      }}
-      className="col-span-6 bg-red-500 md:col-span-3"
-    >
-      <a
-        href="#"
-        className="grid h-full place-content-center text-3xl text-white"
-      >
-        <SiYoutube />
-      </a>
-    </Block> */}
     <Block
       whileHover={{
         rotate: "-2.5deg",
@@ -147,17 +133,17 @@ const AboutBlock = () => (
     <p>
     Always up for a challenge and a good learning opportunity!{" "}
       <span className="text-zinc-400">
-      As a technical product manager and leader, I thrive on using data to tell compelling stories and make informed decisions.
-      My insatiable curiosity fuels my drive to constantly learn and expand my knowledge base. This passion for knowledge 
-      translates into my leadership style, where I foster a collaborative environment that encourages continuous learning and 
-      innovation.
+      At Venture Group, we are passionate about crafting exceptional websites and graphics. Our mission is to empower businesses
+       with visually striking and high-performing digital experiences. Utilizing cutting-edge technologies, we ensure your online
+        presence is not only beautiful but also fast, secure, and user-friendly. We believe in continuous learning, innovation,
+         and delivering top-notch solutions tailored to your needs. Join us to make a lasting impact online and drive your 
+         business growth. Lets think unlimited and achieve extraordinary results together.
       </span>
     </p>
   </Block>
 );
 
 const Logo = () => {
-  // Temp logo from https://logoipsum.com/
   return (
     <svg
       width="40"
@@ -183,8 +169,8 @@ const Footer = () => {
   return (
     <footer className="mt-12">
       <p className="text-center text-zinc-400">
-        Made with ❤️ by{" "}
-        <a href="#" className="text-red-300 hover:underline">
+        Made by{" "}
+        <a href="https://www.youtube.com/@tomisloading" className="text-red-300 hover:underline">
           @tomisloading
         </a>
       </p>

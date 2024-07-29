@@ -6,9 +6,13 @@ const SquishyCard = () => {
   return (
     <section className="px-4 py-12">
       <div className="container flex flex-col lg:flex-row items-center justify-center gap-6 text-xs">
-        <Card price="50-100$" title="Graphics" description="Create eye-catching graphics for your social media posts, marketing materials, and website. Our team is dedicated to providing visually appealing designs that capture your brand's essence." />
-        <Card price="30-100$" title="Website" description="Build beautiful and functional websites that convert visitors into customers. We specialize in creating user-friendly, responsive websites that enhance user experience and drive engagement." />
-        <Card price = 'Custom' title="Custom" description="Whether you're looking for a web design company or web development near me, we can combine our services or create something unique to fit your specific needs. Our flexibility ensures that we meet your specific requirements with precision and creativity." />
+        <Card price="29-99$" title="Website" description="Build beautiful and functional websites that convert visitors into 
+        customers. We specialize in creating user-friendly, responsive websites that enhance user experience and drive engagement." />
+        <Card price = '19-39  $' title="Hosting" description="Whether you're seeking web hosting services or hosting providers near me, we offer flexible solutions for performance, 
+          security, and scalability. Trust us to deliver precise and creative hosting tailored to your growth" />
+        <Card price = 'Custom' title="Custom" description="Whether you're looking for a web design company or web development near
+         me, we can combine our services or create something unique to fit your needs. Our flexibility ensures we meet your 
+         requirements with precision and creativity." />
       </div>
     </section>
   );
