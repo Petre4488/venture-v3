@@ -7,7 +7,7 @@ import {
     PaymentElement,
 } from "@stripe/react-stripe-js"
 import convertToSubcurrency from '../../lib/convertToSubcurrency';
-import BarLoader from "../Components/BarLoader";    
+import Loader from "../Components/BarLoader";    
 
 const CheckoutPage = ( { amount }: {amount:number}) => {
     const stripe = useStripe();
@@ -66,7 +66,7 @@ const CheckoutPage = ( { amount }: {amount:number}) => {
                     className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-e-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white"
                     role="status"
                   >
-                    <BarLoader />
+                    <Loader />
                   </div>
                 </div>
               );
