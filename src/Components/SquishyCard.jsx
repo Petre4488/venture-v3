@@ -57,9 +57,11 @@ const Card = (props) => {
           {props.description}
         </p>
       </div>
-      <button className="absolute bottom-4 left-4 right-4 z-20 rounded border-2 border-white bg-white py-2 text-center font-mono font-black uppercase text-neutral-800 backdrop-blur transition-colors hover:bg-white/30 hover:text-white">
-        Get in touch!
-      </button>
+      <a href="mailto:petrecirceag@venturegroup.cc">
+        <button className="absolute bottom-4 left-4 right-4 z-20 rounded border-2 border-white bg-white py-2 text-center font-mono font-black uppercase text-neutral-800 backdrop-blur transition-colors hover:bg-white/30 hover:text-white">
+          Get in touch!
+        </button>
+      </a>
       <Background />
     </motion.div>
   );
