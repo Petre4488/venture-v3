@@ -18,6 +18,7 @@
     "global": "^4.4.0",
     "lenis": "^1.1.9",
     "next": "^14.2.5",
+    "next-sanity": "^9.4.5",
     "out": "file:",
     "react": "^18",
     "react-dom": "^18",

@@ -28,6 +28,7 @@ export default function NavBar() {
           About
         </Navbar.Link>
         <Navbar.Link href="/news" className="text-neonPink">News</Navbar.Link>
+        <Navbar.Link href="/blog" className="text-neonPink">Blog</Navbar.Link>
         <Navbar.Link href="/payments" className="text-neonPink">Payments</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
