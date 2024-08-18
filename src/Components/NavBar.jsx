@@ -27,8 +27,8 @@ export default function NavBar() {
         <Navbar.Link as={Link} href="/about" className="text-neonPink">
           About
         </Navbar.Link>
-        <Navbar.Link href="/prices" className="text-neonPink">Pricing</Navbar.Link>
-        <Navbar.Link href="/contact" className="text-neonPink">Contract</Navbar.Link>
+        <Navbar.Link href="/news" className="text-neonPink">News</Navbar.Link>
+        <Navbar.Link href="/payments" className="text-neonPink">Payments</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );

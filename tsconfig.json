@@ -22,9 +22,8 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@public/*": ["./public/*"],
+      "@/*": ["./src/*"]
     },
     "target": "ES2017"
   },
@@ -32,7 +31,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts", "src/Components/simpleCard.jsx", "src/Components/Carousel.jsx", "src/app/about/page.jsx", "src/app/page.jsx", "src/Components/EncryptButton.jsx", "src/app/Campaigns/page.jsx", "src/app/contact/page.jsx", ],
+    ".next/types/**/*.ts", "src/Components/simpleCard.jsx", "src/Components/Carousel.jsx", "src/app/about/page.jsx", "src/app/page.jsx", "src/Components/EncryptButton.jsx", "src/app/News/page.jsx", "src/app/contact/page.jsx", ],
   "exclude": [
     "node_modules"
   ]

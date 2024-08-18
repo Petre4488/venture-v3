@@ -250,3 +250,7 @@ body {
   
   .cardP8 { grid-area: cardP8; }
   
+//used in News Page
+  .text-glow {
+    text-shadow: rgba(255,255,255,0.7) 0px 0px 45px; 
+  }
