@@ -26,6 +26,7 @@
       "@/*": ["./src/*"],
       "@Components/*": ["./src/Components/*"],
       "@utils/*": ["./src/utils/*"],
+      "@lib/*": ["./lib/*"],
     },
     "target": "ES2017"
   },

@@ -1,6 +1,6 @@
 "use client";
 
-import styles from '../../../lib/textGlow.module.css';
+import styles from "@lib/textGlow.module.css";
 import { ReactLenis } from "lenis/dist/lenis-react";
 import {
   motion,
